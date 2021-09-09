@@ -5,4 +5,4 @@ from rest_framework import serializers
 class MovieSerializer(serializers.HyperlinkedModelSerializer): 
     class Meta:
         model = Movies
-        fields = "__all__"
+        fields = ["id", "imgurl", "title", "runtime", "medium", "genre", "source", "watched", "notes"]
